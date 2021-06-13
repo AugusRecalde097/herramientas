@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Whatsapp directo</title>
+</head>
+<body>
+
+<div style="background-color: #1ebea5; display: flex; justify-content: center; align-content: center;"> 
+    <H2 style="color: azure; height: 25px; ">Habla por whatsapp a un número de teléfono</H2>
+</div>
+<div style="border: #1ebea5 solid 1PX; padding: 10px;">
+    <p>Introduce el número de telefono sin +54 ni guiones</p>
+    <p style="color: red;">* Importante iniciar whatsapp web primero * </p>
+    <input type="text" name="numeroTel" id="numeroTel" placeholder="Por ej: 3718123456">
+    <button onclick="chat()">🗨 Hablar</button>
+    
+</div>
+ 
+   
+
+</body>
+<script>
+    function chat() {
+        var numero =  document.getElementById("numeroTel").value;
+        window.open("https://web.whatsapp.com/send/?phone=54" + numero + "&text&app_absent=0");
+    }
+
+</script>
+</html>
